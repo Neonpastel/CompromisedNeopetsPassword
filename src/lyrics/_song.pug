@@ -1,0 +1,32 @@
+mixin song(song)
+    tr
+
+        td.image
+            img(src=song.Metadata.Image)
+
+            
+        td.title
+            br
+            span #{song.Artist} - 
+                a(href=song.Links.Songwhip)=song.Song
+        
+        td.metadata
+            p=song.Metadata.Genres.join(", ")
+            p=song.Metadata.Release_Date
+
+        td.transcript
+            a(href="#" + song.Id) Here!
+
+        td.musixmatch
+            if song.Contributions.MusixMatch
+                a(href=song.Contributions.MusixMatch) Yes!
+            else
+                span Nope
+
+        td.genius 
+            if song.Contributions.Genius
+                a(href=song.Contributions.Genius) Yes!
+            else
+                span Nope
+        
+

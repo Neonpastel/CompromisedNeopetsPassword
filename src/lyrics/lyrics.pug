@@ -1,3 +1,5 @@
+include _song.pug
+
 doctype html
 html(lang="en")
   head
@@ -6,7 +8,7 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     
     title CompromisedNeopetsPassword 
-    link(rel="stylesheet", href="style.scss")
+    link(rel="stylesheet", href="../style.scss")
 
     meta(property="og:title" content="Compromised Neopets Password")
     meta(property="og:url" content="https://compromisedneopetspassword.neocities.org/")
@@ -18,7 +20,7 @@ html(lang="en")
 
   body
     nav Back to 
-      a(href="index.pug") Home
+      a(href="../index.pug") Home
 
     main
       ul
@@ -31,20 +33,24 @@ html(lang="en")
 
       table
         tr
+          th
           th Song artist &amp; name
+          th Genre &amp; Release Date
           th My transcript
           th Added to MusixMatch
           th Added to Genius
         
-        tr 
-          td Local News Legend - 
-            a(href="https://songwhip.com/local-news-legend/american-werewolf") American Werewolf !
-          td
-            a(href="../lyrics/Local News Legend - American Werewolf !.md") Here
-          td Nope
-          td
-            a(href="https://genius.com/Local-news-legend-american-werewolf-lyrics") Yes!
+        tr
+          each lyric in lyrics 
+            +song(lyric)
       
       br
 
       span I originally did the lyrics for Izzy Camina's Loser Deadbeat &amp; Celestial Sodemy, submitted them, and then they got locked. And I forgot to save them locally. So uh idk
+
+
+
+  section 
+    each lyric in lyrics
+      article(id=lyric.Id)
+        p=lyric.Lyrics.Original

@@ -1,11 +1,9 @@
 {
-
   "name": "compromisedneopetspassword",
   "version": "0.0.1",
   "description": "",
   "author": "CompromisedNeopetsPassword",
   "license": "MIT",
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Denperidge/CompromisedNeopetsPassword.git"
@@ -15,8 +13,12 @@
     "build": "npx parcel build src/index.pug"
   },
   "devDependencies": {
-    "parcel": "^2.9.3",
+    "@parcel/optimizer-data-url": "^2.9.3",
+    "@parcel/transformer-inline-string": "^2.9.3",
     "@parcel/transformer-pug": "^2.9.3",
-    "@parcel/transformer-sass": "^2.9.3"
+    "@parcel/transformer-sass": "^2.9.3",
+    "@parcel/transformer-yaml": "^2.9.3",
+    "js-yaml": "^4.1.0",
+    "parcel": "^2.9.3"
   }
 }

@@ -15,7 +15,7 @@ mixin song(song)
             p=song.Metadata.Release_Date
 
         td.transcript
-            a(href="#" + song.Id) Here!
+            a(href="../../" + song.File) Here!
 
         td.musixmatch
             if song.Contributions.MusixMatch

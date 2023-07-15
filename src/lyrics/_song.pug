@@ -19,14 +19,14 @@ mixin song(song)
 
         td.musixmatch
             if song.Contributions.MusixMatch
-                a(href=song.Contributions.MusixMatch) Yes!
+                a(href=song.Contributions.MusixMatch.url)=song.Contributions.MusixMatch.text
             else
-                span Nope
+                span /
 
         td.genius 
             if song.Contributions.Genius
-                a(href=song.Contributions.Genius) Yes!
+                a(href=song.Contributions.Genius.url)= song.Contributions.Genius.text
             else
-                span Nope
+                span /
         
 

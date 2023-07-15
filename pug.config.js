@@ -6,6 +6,8 @@ const lyricsDir = "lyrics/";
 const lyricsFiles = fs.readdirSync(lyricsDir);
 
 lyricsFiles.forEach((lyricsFile) => {
+    if (!lyricsFile.toLowerCase().endsWith("yaml") && !lyricsFile.toLowerCase().endsWith("yml")) return;
+
     const path = lyricsDir + lyricsFile;
     const content = fs.readFileSync(path);
 

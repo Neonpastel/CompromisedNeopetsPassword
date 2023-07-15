@@ -13,7 +13,13 @@ Metadata:
   Image: https://f4.bcbits.com/img/a3948227375_10.jpg
 
 Contributions:
-  Genius: https://genius.com/Local-news-legend-american-werewolf-lyrics
+  Genius:
+    text: Added song & lyrics
+    url: https://genius.com/Local-news-legend-american-werewolf-lyrics
+
+  Musixmatch:
+    text: Added lyrics, awaiting review
+    url: https://www.musixmatch.com/lyrics/Local-News-Legend/American-Werewolf
 
 Lyrics:
   Original: >

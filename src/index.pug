@@ -1,45 +1,31 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    
-    title CompromisedNeopetsPassword 
-    link(rel="stylesheet", href="style.scss")
+extends template.pug
 
-    meta(property="og:title" content="Compromised Neopets Password")
-    meta(property="og:url" content="https://compromisedneopetspassword.neocities.org/")
-    meta(property="og:description" content="Lyrics & wiki contributions, media archival. Internet Information and stuff. All that.")
-    meta(property="og:image" content="https://compromisedneopetspassword.neonpastel.net/art.jpg")
-    meta(property="og:type" content="profile")
-    meta(property="og:username" content="CompromisedNeopetsPassword")
-    meta(property="og:gender" content="Outdated option that only has male,female")
+block variables
+  - const title = "Compromised Neopets Password";
 
-  body
-    main
-      h1 Compromised Neopets Password
-      h2 Internet Information and stuff
+block body
+  main
+    h1 Compromised Neopets Password
+    h2 Internet Information and stuff
+ 
+    img(src="/assets/art.jpg" alt="The profile picture I use on most platforms")
 
-        
-      img(src="../assets/art.jpg" alt="The profile picture I use on most platforms")
-
-      h3 Links
-      ul
-        li Song lyrics: 
-          a(href="lyrics/index.pug") ./lyrics
-        li Archive.org: 
-          a(href="https://archive.org/details/@compromised_neopets_password") archive.org/details/@compromised_neopets_password
+    h3 Links
+    ul
+      li Song lyrics: 
+        a(href="lyrics/index.pug") ./lyrics
+      li Archive.org: 
+        a(href="https://archive.org/details/@compromised_neopets_password") archive.org/details/@compromised_neopets_password
       
-      h3 About
+    h3 About
 
-      p This is a personal project of mine for things that fall under any or all of the following conditions:
-      ul
-        li Archive what you can. Companies under capitalism don't care about preservation of the hard work of their employees. Media like software, websites &amp; tv shows get lost to disc rot, link rot, copyright issues, and the like.
-        li Share &amp; spread information. Vendor lock-in stops archival. Lyrics being only on MusixMatch OR Genius is silly. Community-(and oftenly volunteer-)provided information being locked to one website for the sake of profit is a waste. People should ideally be able to access info on the location that fits them best.
+    p This is a personal project of mine for things that fall under any or all of the following conditions:
+    ul
+      li Archive what you can. Companies under capitalism don't care about preservation of the hard work of their employees. Media like software, websites &amp; tv shows get lost to disc rot, link rot, copyright issues, and the like.
+      li Share &amp; spread information. Vendor lock-in stops archival. Lyrics being only on MusixMatch OR Genius is silly. Community-(and oftenly volunteer-)provided information being locked to one website for the sake of profit is a waste. People should ideally be able to access info on the location that fits them best.
         
-      p I'm not a gigantic force or anything, nor do I currently plan on pursuing that. This is just a moniker to contribute to the values I've listed.
+    p I'm not a gigantic force or anything, nor do I currently plan on pursuing that. This is just a moniker to contribute to the values I've listed.
         
-      br
+    br
         
-      p Feel free to contact me! My e-mail is compromisedneopetspassword [at] proton [dot] me.
+    p Feel free to contact me! My e-mail is compromisedneopetspassword [at] proton [dot] me.

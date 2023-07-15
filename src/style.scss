@@ -1,62 +1,62 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
+$one: #8670B2;
+$two: #E6667F;
+$three: #BC6C89;
+$four: #251755;
+$five: #39336B;
 
-   :root {
-    --one: #8670B2;
-    --two: #E6667F;
-    --three: #BC6C89;
-    --four: #251755;
-    --five: #39336B;
-  }
-  
-  html {
-    min-height: 100%;
-  }
-  body {
-    height: 100%;
-  }
-  
-  body {
-    background: var(--one);
-    background: linear-gradient(180deg, var(--five) 0%, var(--one) 62%, var(--three) 87%, var(--two));
-    color: white;
-    font-family: Verdana;
-    text-shadow: 2px 2px 5px var(--four);
-  }
-  
-  img {
-    width: auto;
-    height: 10vw;
-    float: right;
-    margin-right: 5vw;
-  }
-  
-  a:link, a:visited {
-    color: var(--two);
-  }
-  
-  a:visited {
-    background-color: var(--three);
-  }
-  
-  a:hover {
-    color: var(--three);
-  }
-  
-  a:active {
-    color: var(--five);
-  }
-  
-  
-  table {
-    border-collapse: collapse;
-  }
-  tr {
-    border-bottom: 1px solid var(--two);
-  }
-  td, th {
-    padding: 20px 5px;
-    min-width: 30vh;
-    text-align: center;
-  }
+@import "./lyrics/lyrics";
+
+html {
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+body {
+  background: $one;
+  background: linear-gradient(180deg, $five 0%, $one 62%, $three 87%, $two);
+  color: white;
+  font-family: Verdana;
+  text-shadow: 2px 2px 5px $four;
+}
+
+img {
+  width: auto;
+  height: 10vw;
+  float: right;
+  margin-right: 5vw;
+}
+
+a:link,
+a:visited {
+  color: $two;
+}
+
+a:visited {
+  background-color: $three;
+}
+
+a:hover {
+  color: $three;
+}
+
+a:active {
+  color: $five;
+}
+
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid $two;
+}
+
+td,
+th {
+  padding: 20px 5px;
+  text-align: center;
+}

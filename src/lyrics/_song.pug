@@ -16,6 +16,9 @@ mixin song(song)
 
         td.transcript
             a(href="../../" + song.File) Here!
+        
+        td.sources
+            span=song.Lyrics.Sources.join(", ")
 
         td.musixmatch
             if song.Contributions.Musixmatch

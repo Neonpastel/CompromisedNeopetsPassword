@@ -18,8 +18,8 @@ mixin song(song)
             a(href="../../" + song.File) Here!
 
         td.musixmatch
-            if song.Contributions.MusixMatch
-                a(href=song.Contributions.MusixMatch.url)=song.Contributions.MusixMatch.text
+            if song.Contributions.Musixmatch
+                a(href=song.Contributions.Musixmatch.url)=song.Contributions.Musixmatch.text
             else
                 span /
 

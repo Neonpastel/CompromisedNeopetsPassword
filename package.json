@@ -1,0 +1,28 @@
+{
+
+  "name": "compromisedneopetspassword",
+  "version": "1.0.0",
+
+  "scripts": {
+    "start": "npx parcel serve src/index.pug",
+    "build": "npx parcel build src/index.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Denperidge/CompromisedNeopetsPassword.git"
+  },
+  "author": "CompromisedNeopetsPassword",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Denperidge/CompromisedNeopetsPassword/issues"
+  },
+  "homepage": "https://github.com/Denperidge/CompromisedNeopetsPassword#readme",
+  "description": "",
+
+  "main": "index.js",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "@parcel/transformer-pug": "^2.9.3",
+    "@parcel/transformer-sass": "^2.9.3"
+  }
+}

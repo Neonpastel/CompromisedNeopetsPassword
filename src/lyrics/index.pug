@@ -19,18 +19,20 @@ block body
         a(href="https://genius.com/CompromisedNeopetsPassword") genius.com/CompromisedNeopetsPassword
 
     table
-      tr
-        th
-        th Song artist &amp; name
-        th Genre &amp; Release Date
-        th My transcript
-        th Lyrics source(s)
-        th Added to Musixmatch
-        th Added to Genius
-        
-      tr
-        each lyric in lyrics 
-          +song(lyric)
+      thead
+        tr
+          th
+          th Song artist &amp; name
+          th Genre &amp; Release Date
+          th My transcript
+          th Lyrics source(s)
+          th Added to Musixmatch
+          th Added to Genius
+      
+      tbody
+        tr
+          each lyric in lyrics 
+            +song(lyric)
       
     br
 

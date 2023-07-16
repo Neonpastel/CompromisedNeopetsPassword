@@ -4,8 +4,6 @@ $three: #BC6C89;
 $four: #251755;
 $five: #39336B;
 
-@import "./lyrics/lyrics";
-
 html {
   min-height: 100%;
 }
@@ -25,8 +23,12 @@ body {
 img {
   width: auto;
   height: 10vw;
+}
+
+#profilepicture {
   float: right;
   margin-right: 5vw;
+
 }
 
 a:link,
@@ -48,6 +50,7 @@ a:active {
 
 
 table {
+  width: 100%;
   border-collapse: collapse;
 }
 
@@ -59,4 +62,49 @@ td,
 th {
   padding: 20px 5px;
   text-align: center;
+}
+
+// Based on https://css-tricks.com/responsive-data-tables/
+@media (orientation:portrait) {
+  thead {
+    position: absolute;
+    user-select: none;
+    opacity: 0;
+  }
+
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  td {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    flex-wrap: wrap;
+
+
+  }
+
+  $headers: "Song Artist & name", "Genre & Release Date", "My transcript", "Lyrics source(s)", "Added to MusixMatch", "Added to Genius";
+  $i: 2;
+  @each $header in $headers {
+    td:nth-of-type(#{$i}):before {
+      content: $header;
+      justify-self: flex-start;
+      text-align: left;
+      
+    }
+    $i: $i + 1;
+  }
+
+}
+
+table img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin: auto;
 }

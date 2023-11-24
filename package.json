@@ -8,8 +8,8 @@
     "url": "git+https://github.com/Denperidge/CompromisedNeopetsPassword.git"
   },
   "scripts": {
-    "start": "npx parcel serve src/index.pug",
-    "build": "npx parcel build src/index.pug"
+    "start": "npx parcel serve src/index.pug --public-url /CompromisedNeopetsPassword/",
+    "build": "npx parcel build src/index.pug --public-url /CompromisedNeopetsPassword/"
   },
   "devDependencies": {
     "@parcel/transformer-pug": "^2.9.3",
